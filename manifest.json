@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Fechar Aba Específica",
+  "description": "Fecha automaticamente abas que acessam um endereço específico.",
+  "version": "3.2",
+
+  "permissions": [
+    "tabs",
+    "webNavigation"
+  ],
+
+  "host_permissions": [
+    "http://localhost:8091/*"
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "icons": {
+    "128": "icon.png"
+  }
+}
